@@ -33,6 +33,9 @@ class ProductSchema(ma.Schema):
 product_schema = ProductSchema()
 products_schema = ProductSchema(many=True)
 
+@app.route('/')
+def home():
+    return "<h1>Welcome ! It is a Flask CRUD Operations REST API for products</h1>"
 
 @app.route('/product',methods=['POST'])
 def add_product():
@@ -85,4 +88,4 @@ def delete_product(id):
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port='8000',debug=True)
+    app.run()
