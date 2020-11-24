@@ -1,3 +1,4 @@
-.idea/*
-.__pycache__/*
-.amar/*
+.idea/
+__pycache__/
+amar/
+
